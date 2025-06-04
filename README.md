@@ -72,6 +72,21 @@ This project contains UI automation tests for an Android app using Appium, C#, a
    dotnet test
    ```
 
+## Starting an Android Emulator (Virtual Device)
+
+To run the tests, you need an Android emulator (virtual device) running. Here are the steps to start one using Android Studio:
+
+1. **Open Android Studio.**
+2. Go to **Tools > Device Manager** (or **Tools > AVD Manager** in older versions).
+3. Click **Create Device** to add a new virtual device, or select an existing one from the list.
+4. Choose a device definition (e.g., Pixel 5, Nexus 7, Tablet, etc.) and click **Next**.
+5. Select a system image (e.g., Android 12.0, x86_64) and click **Next**.
+6. Review the configuration and click **Finish** to create the device.
+7. In the Device Manager/AVD Manager, click the **Play** (▶) button next to your virtual device to start it.
+8. Wait for the emulator to fully boot before running your tests.
+
+**Tip:** You can also use the [Emulator VS Code extension](https://marketplace.visualstudio.com/items?itemName=DiemasMichiels.emulate) to launch emulators directly from VS Code after configuration.
+
 ## SpecFlow (BDD) Support
 
 This project uses [SpecFlow](https://specflow.org/) for Behavior-Driven Development (BDD) style tests. SpecFlow allows you to write tests in Gherkin syntax (Given/When/Then) in `.feature` files, which are mapped to C# step definitions.
