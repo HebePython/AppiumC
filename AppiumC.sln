@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet-client", "dotnet-client", "{425946A1-43F1-4F08-26BF-9E1ADB774682}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "appiumtest", "dotnet-client\appiumtest\appiumtest.csproj", "{6DCCBAB1-6B99-77A6-DF90-703B2C1E3090}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DCCBAB1-6B99-77A6-DF90-703B2C1E3090}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DCCBAB1-6B99-77A6-DF90-703B2C1E3090}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DCCBAB1-6B99-77A6-DF90-703B2C1E3090}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DCCBAB1-6B99-77A6-DF90-703B2C1E3090}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6DCCBAB1-6B99-77A6-DF90-703B2C1E3090} = {425946A1-43F1-4F08-26BF-9E1ADB774682}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35DA4EB1-0FE2-4915-8170-64434FE3A3B5}
+	EndGlobalSection
+EndGlobal
