@@ -14,3 +14,10 @@ Feature: EasyLaserApp
     Given the app is started
     When I launch the Easy-Laser XT Alignment app
     Then the app should be launched successfully
+
+  # This scenario checks that the App Has started successfully
+  Scenario: Easy-Laser XT Aligntment app has started
+    Given The app has started
+    When I inspect the screen
+    Then the app interface should be visible
+  

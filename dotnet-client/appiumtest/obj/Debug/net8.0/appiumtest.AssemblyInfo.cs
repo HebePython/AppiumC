@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("appiumtest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc2549de48df8b24041fc54483b81e3fc5a63a5a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3948c026884c5a2491fffb2b40dd4eacfc17b132")]
 [assembly: System.Reflection.AssemblyProductAttribute("appiumtest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("appiumtest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

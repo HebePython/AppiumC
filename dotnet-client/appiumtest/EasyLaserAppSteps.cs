@@ -1,3 +1,21 @@
+// ------------------------------------------------------------------------------
+//  EasyLaserAppSteps.cs - SpecFlow Step Definitions
+//
+//  This file contains the C# step definitions for the EasyLaserApp.feature Gherkin scenarios.
+//  Each method is decorated with [Given], [When], or [Then] attributes to bind Gherkin steps
+//  to executable test logic using the Appium .NET driver and NUnit assertions.
+//
+//  Key points:
+//  - Implements the automation logic for each scenario step in EasyLaserApp.feature.
+//  - Uses Appium to interact with the Android app under test.
+//  - Uses NUnit for assertions and test validation.
+//  - The [Binding] attribute makes this class discoverable by SpecFlow.
+//  - Hooks like [BeforeTestRun] and [AfterTestRun] manage Appium driver setup/teardown.
+//
+//  To add new step logic, implement a method with the appropriate attribute and signature.
+//  For more information, see: https://specflow.org/documentation/Step-Definitions/
+// ------------------------------------------------------------------------------
+
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 using OpenQA.Selenium;
@@ -84,6 +102,34 @@ namespace appiumtest
         {
             // In a real test, you would check for a UI element unique to the launched app
             Assert.Pass("Easy-Laser XT Alignment app launched.");
+        }
+
+        // Step for: Given The app has started
+        [Given(@"The app has started")]
+        public void GivenTheAppHasStarted()
+        {
+            // Appium driver is already started in BeforeTestRun
+        }
+
+        // Step for: When I inspect the screen
+        [When(@"I inspect the screen")]
+        public void WhenIInspectTheScreen()
+        {
+            // Example: Print all visible elements (customize as needed)
+            var elements = _driver.FindElements(By.XPath("//*"));
+            foreach (var el in elements)
+            {
+                Console.WriteLine($"Element: {el.Text}, Class: {el.GetAttribute("className")}");
+            }
+        }
+
+        // Step for: Then the app interface should be visible
+        [Then(@"the app interface should be visible")]
+        public void ThenTheAppInterfaceShouldBeVisible()
+        {
+            // Example: Assert that a known UI element is present (customize as needed)
+            var mainView = _driver.FindElement(By.XPath("//*[@content-desc='Game view']"));
+            Assert.IsNotNull(mainView, "Main app interface is not visible.");
         }
     }
 
